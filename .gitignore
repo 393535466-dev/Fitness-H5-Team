@@ -1,0 +1,21 @@
+node_modules/
+.next/
+*.tsbuildinfo
+playwright-report/
+test-results/
+.superpowers/
+/.pm-workflow/
+/scripts/pm-runtime-config.js
+/scripts/.venv/
+/.handoff/
+.vercel
+.env*
+
+# Local database data and private runtime configuration
+.local/
+
+server/
+
+.DS_Store
+
+__pycache__/
