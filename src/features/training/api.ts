@@ -98,7 +98,7 @@ export function createTrainingApi(
   };
   return {
     courses: (q) => get("/training/courses" + qs(q)),
-    course: (id) => get("/training/courses/" + id),
+    course: (id) => get("/training/courses/" + encodeURIComponent(id)),
     templates: (cursor) => get("/training/plan-templates" + qs({ cursor })),
     plan: (weekStart) => get("/me/training-plan" + qs({ weekStart })),
     createPlan: (templateId, startDate, key) =>

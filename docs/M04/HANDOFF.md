@@ -89,3 +89,11 @@ node node_modules/vitest/vitest.mjs run --config tests/m04/vitest.mysql.config.t
 ```
 
 该套件验证真实锁、条件唯一、JSON/DECIMAL、计划替换和数据库回滚；奖励/Outbox 仍为测试替身，**不等于 M01/M05 端到端验收**。真实登录/管理员守卫、Cookie/CSRF、幂等租约重放、同事务积分账本、媒体、通知投递仍需在完整服务装配后联调。供应商未配置不阻塞训练记录测试，但奖励核心事务不能以异步补分替代。
+
+## 2026-10-21 · 前端二级页面更新
+
+V2 将弹层流程改为 `/training?view=...` 下完整页面；Provider 注入方式、15 个后端接口、七表、共享 DTO 和 Worker 保持既有契约。页面路由与日期工具位于 `src/features/training/navigation.ts`；`Training` 在模块内提供 Suspense 边界，兼容生产预渲染的 useSearchParams。
+
+学习仍使用 CourseDto.description/videoUrl，不引入独立动作库或学习进度数据。模板选择先预览日期并确认替换，API 返回的计划作为保存结果；健康看板刷新失败单独提示，不能误报已经提交的训练/计划保存失败。正式内容与结构化扩展要求见 CONTENT-CHECKLIST。支持复制 URL，但开发预览的内存记录在刷新时重置；生产应由原 current/history/plan 接口恢复。
+
+未装配 API 时不会显示模拟课程或模拟成果，未知汇总显示“待同步 / —”。这版仍需 M01/M05 的真实联调，不能因二级页面可操作就标记全链路上线。
