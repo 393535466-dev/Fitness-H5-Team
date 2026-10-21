@@ -45,3 +45,9 @@ node node_modules/vitest/vitest.mjs run --config tests/m04/vitest.mysql.config.t
 ## 先前工作存档
 
 本次开发前已在用户工作区建立 `存档/2026-10-20_前期产品方案与汇报/`，保留 26 份历史文件、完整 ZIP 和逐文件 SHA-256 清单，原文件未删除。仓库不上传历史汇报大文件，存档说明见 [ARCHIVE.md](ARCHIVE.md)。
+
+## 训练体验 V2 · 2026-10-21
+
+课程/计划/学习/训练/成果/记录/提醒现采用完整二级页面，用 `/training?view=...` 区分并保留前进后退。产品取舍及完整地址见 [UI-OPTIMIZATION.md](UI-OPTIMIZATION.md)，待补课程素材见 [CONTENT-CHECKLIST.md](CONTENT-CHECKLIST.md)。
+
+保留既有七表与服务端规则。正式教学素材按用户决定后补，不扩展逐组重量记录。当前自动化检查为 46 项通过，浏览器操作范围与尚缺验证见 [VALIDATION.md](VALIDATION.md) 的 V2 部分。
